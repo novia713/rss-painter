@@ -1,14 +1,14 @@
 # paint-clj
 
-A Clojure library designed to ... well, that part is up to you.
+Consume any RSS content in a webpage.
 
-## Usage
 
-FIXME
+![alt tag](http://pix.toile-libre.org/upload/original/1428683122.png)
 
-## License
+## Personalization
+1. just edit and add the rss URL to consume
+2. apply your css styles and put your own images
+3. go!
 
-Copyright © 2015 FIXME
 
-Distributed under the Eclipse Public License either version 1.0 or (at
-your option) any later version.
+Copyright © 2015 leandro
