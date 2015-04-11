@@ -8,13 +8,22 @@
   :dependencies [[org.clojure/clojure "1.6.0"]
                  [jayq "2.5.4"]
                  [org.clojure/clojurescript "0.0-2268"]
+                 [environ "1.0.0"]
                 ]
 
   ;; lein-cljsbuild plugin to build a CLJS project
-  :plugins [[lein-cljsbuild "1.0.4"]]
+  :plugins [
+      [lein-cljsbuild "1.0.4"]
+      [lein-environ "1.0.0"]
+      ]
 
   :source-paths ["src/clj" "src/cljs"]
 
+
+  ;; app environment variables
+  :env {
+    :rss-uri "http://ajax.googleapis.com/ajax/services/feed/load?v=1.0&num=20&q=http://www.reddit.com/r/php/.rss"
+  }
 
 
   ;; cljsbuild options configuration
@@ -31,5 +40,6 @@
 
 
         ;; minimal JS optimization directive
-        :optimizations :whitespace
-        :pretty-print true}}]})
+        :optimizations :advanced
+        ;:pretty-print true
+        }}]})
